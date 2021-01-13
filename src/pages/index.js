@@ -13,7 +13,7 @@ const brStyle = {
 }
 
 const headingStyles = {
-  fontSize: "200%",
+  fontSize: "150%",
   marginTop: 0,
   marginBottom: "64px",
 }

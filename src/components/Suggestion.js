@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Content = styled.p`
     display: inline;
     color: #00BDCF;
-    font-size: 350%;
+    font-size: 250%;
 `;
 
 function Suggestion() {
@@ -28,9 +28,9 @@ function Suggestion() {
     }, [])
 
     if (error) {
-        return <Content> {error.message} asdfgh my brain isn't working rn </Content>;
+        return <div> {error.message} asdfgh my brain isn't working rn </div>;
     } else if (!isLoaded) {
-        return <Content> hold on i'm thinking </Content>
+        return <div> hold on i'm thinking </div>
     } else {
         return (
             <div>
