@@ -8,10 +8,14 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
+const brStyle = {
+  lineHeight: "300%",
+}
+
 const headingStyles = {
+  fontSize: "200%",
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 600,
+  marginBottom: "64px",
 }
 
 const linkStyle = {
@@ -31,8 +35,8 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Ghost Wordpack</title>
       <h1 style={headingStyles}>
-        Looking for a game of Ghost? I suggest...
-        <br />
+        Looking for a game of Ghost? Try....
+        <br style={brStyle}/>
         <Suggestion/>
       </h1>
       <a style={linkStyle} href={`${docLink.url}`}>

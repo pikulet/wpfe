@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Content = styled.p`
+    display: inline;
     color: #00BDCF;
+    font-size: 350%;
 `;
 
 function Suggestion() {
@@ -11,14 +13,7 @@ function Suggestion() {
     const [words, setWords] = useState([]);
 
     useEffect(() => {
-        fetch("https://ghost-wp.herokuapp.com", {
-            method: 'GET',
-            headers: {
-                "Content-Type"  : "application/json",
-                "Access-Control-Allow-Origin"   : "emghost.netlify.app",
-                "Origin"        : "emghost.netlify.app",
-            }
-        })
+        fetch("https://cors-anywhere.herokuapp.com/ghost-wp.herokuapp.com")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -38,7 +33,11 @@ function Suggestion() {
         return <Content> hold on i'm thinking </Content>
     } else {
         return (
-            <Content> {words.town} and {words.fool} </Content>
+            <div>
+            <Content> {words.town} </Content> 
+            and 
+            <Content> {words.fool} </Content>
+            </div>
         );
     }
 }
