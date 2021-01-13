@@ -20,5 +20,5 @@
     "react-dom": "^16.13.1",
     "styled-components": "^5.2.1"
   },
-  "proxy": "localhost:8000"
+  "proxy": "emghost.netlify.app"
 }

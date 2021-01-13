@@ -15,8 +15,8 @@ function Suggestion() {
             method: 'GET',
             headers: {
                 "Content-Type"  : "application/json",
-                "Access-Control-Allow-Origin"   : "*",
-                "Origin"        : "localhost:8000",
+                "Access-Control-Allow-Origin"   : "emghost.netlify.app",
+                "Origin"        : "emghost.netlify.app",
             }
         })
             .then(res => res.json())

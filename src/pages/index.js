@@ -11,7 +11,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 650,
+  maxWidth: 600,
 }
 
 const linkStyle = {
@@ -20,7 +20,7 @@ const linkStyle = {
 }
 
 const docLink = {
-  text: "Suggest new words",
+  text: "I have some new words to suggest",
   url: "https://github.com/pikulet/ghost-wp/",
   color: "#8954A8",
 }
