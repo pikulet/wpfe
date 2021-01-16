@@ -1,5 +1,3 @@
-## Wordpack FrontEnd
+## :sunflower: Wordpack FrontEnd :sunflower:
 
-Site in React Gatsby to make a CORS requests to a backend server. 
-
-Nothing fanciful, just a repo for netlify to work with. Uses `styled-component`s.
+This is very plain site in React Gatsby. When loaded, it will make a CORS request to my backend server. Did some styling with `styled-components` too. Nothing fanciful, just a repo for netlify to work with.
