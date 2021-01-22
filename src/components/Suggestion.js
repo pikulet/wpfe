@@ -12,10 +12,10 @@ function Suggestion() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [words, setWords] = useState([]);
 
-    const site = "https://cors-anywhere.herokuapp.com/pikulet.herokuapp.com/ghost";
+    const site = 
 
     useEffect(() => {
-        fetch(site, {
+        fetch("https://pikulet.herokuapp.com/ghost", {
             mode: 'no-cors'
         })
             .then(res => res.json())
