@@ -12,7 +12,7 @@ function Suggestion() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [words, setWords] = useState([]);
 
-    const site = "https://cors-anywhere.herokuapp.com/pikulet.herokuapp.com/ghost")
+    const site = "https://cors-anywhere.herokuapp.com/pikulet.herokuapp.com/ghost";
 
     useEffect(() => {
         fetch(site, {
